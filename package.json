@@ -1,7 +1,7 @@
 {
-  "name": "mint-ui",
+  "name": "z-mint-ui",
   "version": "2.2.13",
-  "description": "Mobile UI elements for vue.js",
+  "description": "This is a fork of mint-ui",
   "keywords": [
     "component",
     "vue",
@@ -28,11 +28,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElemeFE/mint-ui.git"
+    "url": "git+https://github.com/zmen/mint-ui.git"
   },
-  "homepage": "https://github.com/ElemeFE/mint-ui#readme",
+  "homepage": "https://github.com/zmen/mint-ui#readme",
   "bugs": {
-    "url": "https://github.com/ElemeFE/mint-ui/issues"
+    "url": "https://github.com/zmen/mint-ui/issues"
   },
   "author": "elemefe",
   "license": "MIT",
