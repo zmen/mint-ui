@@ -4,7 +4,7 @@
       <slot></slot>
     </ul>
     
-    <div class="mint-indexlist-nav" @touchstart="handleTouchStart" ref="nav">
+    <div class="mint-indexlist-nav" :style="indexNavMargin?{}:{'border':'none','background':'transparent'}" @touchstart="handleTouchStart" ref="nav">
       <ul class="mint-indexlist-navlist">
         <li class="mint-indexlist-navitem" v-for="section in sections">{{ section.index }}</li>
       </ul>
@@ -83,6 +83,10 @@
 
     props: {
       height: Number,
+      indexNavMargin: {
+        type: Boolean,
+        default: true
+      },
       showIndicator: {
         type: Boolean,
         default: true
@@ -115,7 +119,7 @@
 
     methods: {
       init() {
-        this.$nextTick(() => {
+        this.indexNavMargin && this.$nextTick(() => {
           this.navWidth = this.$refs.nav.clientWidth;
         });
         let listItems = this.$refs.content.getElementsByTagName('li');

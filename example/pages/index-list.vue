@@ -3,7 +3,7 @@
     <h1 class="page-title">Index List</h1>
     <p class="page-indexlist-desc">此例请使用手机查看</p>
     <div class="page-indexlist-wrapper">
-      <mt-index-list>
+      <mt-index-list :indexNavMargin="false">
         <mt-index-section v-for="item in alphabet" :index="item.initial">
           <mt-cell v-for="cell in item.cells" :title="cell"></mt-cell>
         </mt-index-section>
